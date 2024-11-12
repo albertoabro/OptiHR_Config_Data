@@ -1,6 +1,13 @@
 server:
   port: 8082
 
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+
 eureka:
   instance:
     preferIpAddress: true
